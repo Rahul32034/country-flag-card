@@ -1,0 +1,11 @@
+<div class="main">
+
+  <h1 style="text-align: center; padding-top: 30px; font-family: 'Monoton', cursive; font-weight: 500;">Flags &nbsp; Card &nbsp; Assignment</h1>
+
+  <div class="main_card-container">
+    <div *ngFor="let country of countries">
+      <app-card [name]="country.name" [subregion]="country.subregion" [capital]=" country.capital" [region]="country.region" [Population]="country.population" [flag]="country.flag" [languages]="country.languages" [currencies] = "country.currencies"></app-card>    
+    </div>
+    
+  </div>
+</div>
